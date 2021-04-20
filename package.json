@@ -1,0 +1,26 @@
+{
+    "name": "gitscraper",
+    "version": "1.0.0",
+    "description": "A GitHub repository WebScraper",
+    "main": "server.js",
+    "scripts": {
+        "debug": "nodemon --inspect server.js",
+        "start": "node --experimental-modules --trace-warnings server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Rodrigo de Souza",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.22",
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.7",
+        "typescript": "^4.2.4"
+    }
+}
