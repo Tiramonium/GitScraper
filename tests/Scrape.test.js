@@ -1,4 +1,4 @@
-jest.spyOn(global.console, "log").mockImplementation(() => {});
+const consoleLogSpy = jest.spyOn(global.console, "log").mockImplementation(() => {});
 
 const app = require('../server');
 const request = require('supertest');
@@ -14,3 +14,4 @@ describe('Scrape Endpoints', () => {
 });
 
 app.close();
+consoleLogSpy.mockRestore()();
