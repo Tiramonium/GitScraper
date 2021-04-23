@@ -23,3 +23,5 @@ app.post('/api/scrape', (request, response) => {
 app.listen(port, () => {
     console.log(Common.FormatDateTime(new Date()) + ' - The GitHub Scraper is running on port ' + port);
 });
+
+module.exports = app;
