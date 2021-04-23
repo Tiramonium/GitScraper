@@ -14,4 +14,4 @@ describe('Scrape Endpoints', () => {
 });
 
 app.close();
-consoleLogSpy.mockRestore()();
+consoleLogSpy.mockRestore();
