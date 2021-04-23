@@ -1,3 +1,5 @@
+jest.spyOn(global.console, "log").mockImplementation(() => {});
+
 const app = require('../server');
 const request = require('supertest');
 
@@ -10,3 +12,5 @@ describe('Scrape Endpoints', () => {
         expect(response.statusCode).toEqual(400);
     });
 });
+
+app.close();

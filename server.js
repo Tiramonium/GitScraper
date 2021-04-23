@@ -20,8 +20,8 @@ app.post('/api/scrape', (request, response) => {
     return Scraper.Scrape(request.body, response);
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(Common.FormatDateTime(new Date()) + ' - The GitHub Scraper is running on port ' + port);
 });
 
-module.exports = app;
+module.exports = server;
